@@ -50,11 +50,17 @@
   NSRectFill(rect);
 }
 
-- (void) updateProgressBar {
+- (void)updateProgressBar {
+  [self setHidden:NO];
   [[NSApp dockTile] display];
 }
 
-- (void) setProgress:(float)progress {
+- (void)hideProgressBar {
+  [self setHidden:YES];
+  [[NSApp dockTile] display];
+}
+
+- (void)setProgress:(float)progress {
   [self setDoubleValue:progress];
 }
 

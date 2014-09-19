@@ -2,10 +2,11 @@
 
 @interface DockDownloadProgressBar : NSProgressIndicator
 
-+ (DockDownloadProgressBar*) sharedDockDownloadProgressBar;
++ (DockDownloadProgressBar*)sharedDockDownloadProgressBar;
 
-- (void) setProgress:(float)progress;
+- (void)setProgress:(float)progress;
 
-- (void) updateProgressBar;
+- (void)updateProgressBar;
 
+- (void)hideProgressBar;
 @end

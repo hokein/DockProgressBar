@@ -8,9 +8,11 @@
 
 @interface DockCircularProgressBar : NSObject
 
-+(DockCircularProgressBar*) sharedDockCircularProgressBar;
++ (DockCircularProgressBar*)sharedDockCircularProgressBar;
 
--(void) updateProgressBar;
+- (void)updateProgressBar;
+
+- (void)hideProgressBar;
 
 // Indicates whether the progress indicator should be in an indeterminate state
 // or not.

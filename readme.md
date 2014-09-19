@@ -10,6 +10,7 @@ DockProgressBar is designed as singleton, and provides simple APIs for developer
 * `shareXXXProgressBar` : Get a ProgressBar instance.
 * `setProgress` : Set progress value.
 * `updateProgressBar` : Show the ProgressBar.
+* `hideProgressBar`: Hide the ProgressBar.
 
 By default, the valid progress range is [0.0, 1.0].  
 

@@ -27,6 +27,7 @@ class ScopedNSGraphicsContextSaveGState {
 
 @interface DockTileView : NSView {
 @private
+  BOOL hide_progress_bar_;
   BOOL show_percent_;
   BOOL indeterminate_;
   float progress_;
@@ -42,6 +43,7 @@ class ScopedNSGraphicsContextSaveGState {
 // Indicates whether the progress number should be showed in circular process bar.
 @property BOOL showPercent;
 
+@property BOOL hideProgressBar;
 @end
 
 @implementation DockTileView
@@ -49,6 +51,7 @@ class ScopedNSGraphicsContextSaveGState {
 @synthesize indeterminate = indeterminate_;
 @synthesize progress = progress_;
 @synthesize showPercent = show_percent_;
+@synthesize hideProgressBar = hide_progress_bar_;
 
 - (void)drawRect:(NSRect)dirtyRect {
   // Not -[NSApplication applicationIconImage]; that fails to return a pasted
@@ -60,6 +63,8 @@ class ScopedNSGraphicsContextSaveGState {
             operation:NSCompositeSourceOver
              fraction:1.0];
   
+  if (hide_progress_bar_)
+    return;
   NSRect badgeRect = [self bounds];
   badgeRect.size.height = (int)(kBadgeFraction * badgeRect.size.height);
   int newWidth = kBadgeFraction * NSWidth(badgeRect);
@@ -212,7 +217,17 @@ class ScopedNSGraphicsContextSaveGState {
   return progress_bar;
 }
 
-- (void) updateProgressBar {
+- (void)updateProgressBar {
+  NSDockTile* dockTile = [[NSApplication sharedApplication] dockTile];
+  DockTileView* dockTileView = (DockTileView*)([dockTile contentView]);
+  [dockTileView setHideProgressBar:NO];
+  [[NSApp dockTile] display];
+}
+
+-(void)hideProgressBar {
+  NSDockTile* dockTile = [[NSApplication sharedApplication] dockTile];
+  DockTileView* dockTileView = (DockTileView*)([dockTile contentView]);
+  [dockTileView setHideProgressBar:YES];
   [[NSApp dockTile] display];
 }
 
@@ -225,14 +240,14 @@ class ScopedNSGraphicsContextSaveGState {
   }
 }
 
-- (void) setProgress:(float) progress {
+- (void)setProgress:(float) progress {
   NSDockTile* dockTile = [[NSApplication sharedApplication] dockTile];
   DockTileView* dockTileView = (DockTileView*)([dockTile contentView]);
   
   [dockTileView setProgress:progress];
 }
 
-- (void) setShowPercent:(BOOL)show_percent {
+- (void)setShowPercent:(BOOL)show_percent {
   NSDockTile* dockTile = [[NSApplication sharedApplication] dockTile];
   DockTileView* dockTileView = (DockTileView*)([dockTile contentView]);
   
