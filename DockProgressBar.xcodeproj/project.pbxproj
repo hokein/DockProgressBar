@@ -17,6 +17,7 @@
 		76C069C919CC127B00C0F7A4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C069C819CC127B00C0F7A4 /* XCTest.framework */; };
 		76C069CA19CC127B00C0F7A4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C069A919CC127B00C0F7A4 /* Cocoa.framework */; };
 		76C069DE19CC12B300C0F7A4 /* DockDownloadProgressBar.mm in Sources */ = {isa = PBXBuildFile; fileRef = 76C069DD19CC12B300C0F7A4 /* DockDownloadProgressBar.mm */; };
+		76C069E219CC21B300C0F7A4 /* DockCircularProgressBar.mm in Sources */ = {isa = PBXBuildFile; fileRef = 76C069E119CC21B300C0F7A4 /* DockCircularProgressBar.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		76C069C819CC127B00C0F7A4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		76C069DD19CC12B300C0F7A4 /* DockDownloadProgressBar.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DockDownloadProgressBar.mm; sourceTree = "<group>"; };
 		76C069DF19CC12C000C0F7A4 /* DockDownloadProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DockDownloadProgressBar.h; sourceTree = "<group>"; };
+		76C069E019CC21B300C0F7A4 /* DockCircularProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DockCircularProgressBar.h; sourceTree = "<group>"; };
+		76C069E119CC21B300C0F7A4 /* DockCircularProgressBar.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DockCircularProgressBar.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,8 @@
 		76C069AF19CC127B00C0F7A4 /* DockProgressBar */ = {
 			isa = PBXGroup;
 			children = (
+				76C069E019CC21B300C0F7A4 /* DockCircularProgressBar.h */,
+				76C069E119CC21B300C0F7A4 /* DockCircularProgressBar.mm */,
 				76C069DF19CC12C000C0F7A4 /* DockDownloadProgressBar.h */,
 				76C069DD19CC12B300C0F7A4 /* DockDownloadProgressBar.mm */,
 				76C069BB19CC127B00C0F7A4 /* AppDelegate.h */,
@@ -233,6 +238,7 @@
 			files = (
 				76C069BD19CC127B00C0F7A4 /* AppDelegate.m in Sources */,
 				76C069B619CC127B00C0F7A4 /* main.m in Sources */,
+				76C069E219CC21B300C0F7A4 /* DockCircularProgressBar.mm in Sources */,
 				76C069DE19CC12B300C0F7A4 /* DockDownloadProgressBar.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
