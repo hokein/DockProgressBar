@@ -34,11 +34,21 @@ The same style likes the original download bar on Mac OS X.
 `DockDownloadProgressBar` is a subclass of `NSProgressIndicator`,
 you can use any base class's method to custom your progress bar.
 
+![]( https://github.com/hokein/DockProgressBar/blob/master/images/download_progress_bar.png)
 
 ###DockCircularProgressBar
 
 The circular style progress bar like Google Chrome download style.
 
+
+CicularProgressBar without percent:
+
+![]( https://github.com/hokein/DockProgressBar/blob/master/images/circular_progress_bar.png)
+
+
+CicularProgressBar with percent:
+
+![]( https://github.com/hokein/DockProgressBar/blob/master/images/circular_progress_bar_with_percent.png)
 
 ##License
 
