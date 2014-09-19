@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		76C069AA19CC127B00C0F7A4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C069A919CC127B00C0F7A4 /* Cocoa.framework */; };
+		76C069B419CC127B00C0F7A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 76C069B219CC127B00C0F7A4 /* InfoPlist.strings */; };
+		76C069B619CC127B00C0F7A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C069B519CC127B00C0F7A4 /* main.m */; };
+		76C069BA19CC127B00C0F7A4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 76C069B819CC127B00C0F7A4 /* Credits.rtf */; };
+		76C069BD19CC127B00C0F7A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C069BC19CC127B00C0F7A4 /* AppDelegate.m */; };
+		76C069C019CC127B00C0F7A4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76C069BE19CC127B00C0F7A4 /* MainMenu.xib */; };
+		76C069C219CC127B00C0F7A4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76C069C119CC127B00C0F7A4 /* Images.xcassets */; };
+		76C069C919CC127B00C0F7A4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C069C819CC127B00C0F7A4 /* XCTest.framework */; };
+		76C069CA19CC127B00C0F7A4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C069A919CC127B00C0F7A4 /* Cocoa.framework */; };
+		76C069DE19CC12B300C0F7A4 /* DockDownloadProgressBar.mm in Sources */ = {isa = PBXBuildFile; fileRef = 76C069DD19CC12B300C0F7A4 /* DockDownloadProgressBar.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		76C069CB19CC127B00C0F7A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76C0699E19CC127B00C0F7A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76C069A519CC127B00C0F7A4;
+			remoteInfo = DockProgressBar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		76C069A619CC127B00C0F7A4 /* DockProgressBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DockProgressBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		76C069A919CC127B00C0F7A4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		76C069AC19CC127B00C0F7A4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		76C069AD19CC127B00C0F7A4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		76C069AE19CC127B00C0F7A4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		76C069B119CC127B00C0F7A4 /* DockProgressBar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DockProgressBar-Info.plist"; sourceTree = "<group>"; };
+		76C069B319CC127B00C0F7A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		76C069B519CC127B00C0F7A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		76C069B719CC127B00C0F7A4 /* DockProgressBar-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DockProgressBar-Prefix.pch"; sourceTree = "<group>"; };
+		76C069B919CC127B00C0F7A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		76C069BB19CC127B00C0F7A4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		76C069BC19CC127B00C0F7A4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		76C069BF19CC127B00C0F7A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		76C069C119CC127B00C0F7A4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		76C069C719CC127B00C0F7A4 /* DockProgressBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DockProgressBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76C069C819CC127B00C0F7A4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		76C069DD19CC12B300C0F7A4 /* DockDownloadProgressBar.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DockDownloadProgressBar.mm; sourceTree = "<group>"; };
+		76C069DF19CC12C000C0F7A4 /* DockDownloadProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DockDownloadProgressBar.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		76C069A319CC127B00C0F7A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76C069AA19CC127B00C0F7A4 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76C069C419CC127B00C0F7A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76C069CA19CC127B00C0F7A4 /* Cocoa.framework in Frameworks */,
+				76C069C919CC127B00C0F7A4 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		76C0699D19CC127B00C0F7A4 = {
+			isa = PBXGroup;
+			children = (
+				76C069AF19CC127B00C0F7A4 /* DockProgressBar */,
+				76C069A819CC127B00C0F7A4 /* Frameworks */,
+				76C069A719CC127B00C0F7A4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		76C069A719CC127B00C0F7A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76C069A619CC127B00C0F7A4 /* DockProgressBar.app */,
+				76C069C719CC127B00C0F7A4 /* DockProgressBarTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		76C069A819CC127B00C0F7A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76C069A919CC127B00C0F7A4 /* Cocoa.framework */,
+				76C069C819CC127B00C0F7A4 /* XCTest.framework */,
+				76C069AB19CC127B00C0F7A4 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76C069AB19CC127B00C0F7A4 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76C069AC19CC127B00C0F7A4 /* AppKit.framework */,
+				76C069AD19CC127B00C0F7A4 /* CoreData.framework */,
+				76C069AE19CC127B00C0F7A4 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		76C069AF19CC127B00C0F7A4 /* DockProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				76C069DF19CC12C000C0F7A4 /* DockDownloadProgressBar.h */,
+				76C069DD19CC12B300C0F7A4 /* DockDownloadProgressBar.mm */,
+				76C069BB19CC127B00C0F7A4 /* AppDelegate.h */,
+				76C069BC19CC127B00C0F7A4 /* AppDelegate.m */,
+				76C069BE19CC127B00C0F7A4 /* MainMenu.xib */,
+				76C069C119CC127B00C0F7A4 /* Images.xcassets */,
+				76C069B019CC127B00C0F7A4 /* Supporting Files */,
+			);
+			path = DockProgressBar;
+			sourceTree = "<group>";
+		};
+		76C069B019CC127B00C0F7A4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				76C069B119CC127B00C0F7A4 /* DockProgressBar-Info.plist */,
+				76C069B219CC127B00C0F7A4 /* InfoPlist.strings */,
+				76C069B519CC127B00C0F7A4 /* main.m */,
+				76C069B719CC127B00C0F7A4 /* DockProgressBar-Prefix.pch */,
+				76C069B819CC127B00C0F7A4 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		76C069A519CC127B00C0F7A4 /* DockProgressBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76C069D719CC127B00C0F7A4 /* Build configuration list for PBXNativeTarget "DockProgressBar" */;
+			buildPhases = (
+				76C069A219CC127B00C0F7A4 /* Sources */,
+				76C069A319CC127B00C0F7A4 /* Frameworks */,
+				76C069A419CC127B00C0F7A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DockProgressBar;
+			productName = DockProgressBar;
+			productReference = 76C069A619CC127B00C0F7A4 /* DockProgressBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		76C069C619CC127B00C0F7A4 /* DockProgressBarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76C069DA19CC127B00C0F7A4 /* Build configuration list for PBXNativeTarget "DockProgressBarTests" */;
+			buildPhases = (
+				76C069C319CC127B00C0F7A4 /* Sources */,
+				76C069C419CC127B00C0F7A4 /* Frameworks */,
+				76C069C519CC127B00C0F7A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76C069CC19CC127B00C0F7A4 /* PBXTargetDependency */,
+			);
+			name = DockProgressBarTests;
+			productName = DockProgressBarTests;
+			productReference = 76C069C719CC127B00C0F7A4 /* DockProgressBarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		76C0699E19CC127B00C0F7A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				TargetAttributes = {
+					76C069C619CC127B00C0F7A4 = {
+						TestTargetID = 76C069A519CC127B00C0F7A4;
+					};
+				};
+			};
+			buildConfigurationList = 76C069A119CC127B00C0F7A4 /* Build configuration list for PBXProject "DockProgressBar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 76C0699D19CC127B00C0F7A4;
+			productRefGroup = 76C069A719CC127B00C0F7A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				76C069A519CC127B00C0F7A4 /* DockProgressBar */,
+				76C069C619CC127B00C0F7A4 /* DockProgressBarTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		76C069A419CC127B00C0F7A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76C069B419CC127B00C0F7A4 /* InfoPlist.strings in Resources */,
+				76C069C219CC127B00C0F7A4 /* Images.xcassets in Resources */,
+				76C069BA19CC127B00C0F7A4 /* Credits.rtf in Resources */,
+				76C069C019CC127B00C0F7A4 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76C069C519CC127B00C0F7A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		76C069A219CC127B00C0F7A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76C069BD19CC127B00C0F7A4 /* AppDelegate.m in Sources */,
+				76C069B619CC127B00C0F7A4 /* main.m in Sources */,
+				76C069DE19CC12B300C0F7A4 /* DockDownloadProgressBar.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76C069C319CC127B00C0F7A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		76C069CC19CC127B00C0F7A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76C069A519CC127B00C0F7A4 /* DockProgressBar */;
+			targetProxy = 76C069CB19CC127B00C0F7A4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		76C069B219CC127B00C0F7A4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76C069B319CC127B00C0F7A4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		76C069B819CC127B00C0F7A4 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76C069B919CC127B00C0F7A4 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		76C069BE19CC127B00C0F7A4 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76C069BF19CC127B00C0F7A4 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		76C069D519CC127B00C0F7A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		76C069D619CC127B00C0F7A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		76C069D819CC127B00C0F7A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DockProgressBar/DockProgressBar-Prefix.pch";
+				INFOPLIST_FILE = "DockProgressBar/DockProgressBar-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		76C069D919CC127B00C0F7A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DockProgressBar/DockProgressBar-Prefix.pch";
+				INFOPLIST_FILE = "DockProgressBar/DockProgressBar-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		76C069DB19CC127B00C0F7A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DockProgressBar.app/Contents/MacOS/DockProgressBar";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DockProgressBar/DockProgressBar-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DockProgressBarTests/DockProgressBarTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		76C069DC19CC127B00C0F7A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DockProgressBar.app/Contents/MacOS/DockProgressBar";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DockProgressBar/DockProgressBar-Prefix.pch";
+				INFOPLIST_FILE = "DockProgressBarTests/DockProgressBarTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		76C069A119CC127B00C0F7A4 /* Build configuration list for PBXProject "DockProgressBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76C069D519CC127B00C0F7A4 /* Debug */,
+				76C069D619CC127B00C0F7A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76C069D719CC127B00C0F7A4 /* Build configuration list for PBXNativeTarget "DockProgressBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76C069D819CC127B00C0F7A4 /* Debug */,
+				76C069D919CC127B00C0F7A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		76C069DA19CC127B00C0F7A4 /* Build configuration list for PBXNativeTarget "DockProgressBarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76C069DB19CC127B00C0F7A4 /* Debug */,
+				76C069DC19CC127B00C0F7A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 76C0699E19CC127B00C0F7A4 /* Project object */;
+}
