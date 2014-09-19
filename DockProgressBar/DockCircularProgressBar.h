@@ -24,4 +24,6 @@
 // Indicates whether the progress number should be showed in circular process bar.
 - (void)setShowPercent:(BOOL)show_percent;
 
+- (void)clear;
+
 @end

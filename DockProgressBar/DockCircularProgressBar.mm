@@ -204,9 +204,8 @@ class ScopedNSGraphicsContextSaveGState {
 
 + (DockCircularProgressBar*) sharedDockCircularProgressBar {
   static DockCircularProgressBar* progress_bar;
-  if (!progress_bar) {
-    NSDockTile* dockTile = [NSApp dockTile];
-    
+  NSDockTile* dockTile = [NSApp dockTile];
+  if (!progress_bar || [dockTile contentView] == NULL) {
     DockTileView* dockTileView = [[DockTileView alloc] init];
     [dockTile setContentView:dockTileView];
     
@@ -254,4 +253,7 @@ class ScopedNSGraphicsContextSaveGState {
   [dockTileView setShowPercent:show_percent];
 }
 
+- (void)clear {
+  [[NSApp dockTile] setContentView:NULL];
+}
 @end

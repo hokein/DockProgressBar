@@ -9,4 +9,7 @@
 - (void)updateProgressBar;
 
 - (void)hideProgressBar;
+
+- (void)clear;
+
 @end

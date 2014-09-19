@@ -4,9 +4,8 @@
 
 + (DockDownloadProgressBar*)sharedDockDownloadProgressBar {
   static DockDownloadProgressBar* progress_bar;
-  if (!progress_bar) {
-    NSDockTile* dock_tile = [NSApp dockTile];
-    
+  NSDockTile* dock_tile = [NSApp dockTile];
+  if (!progress_bar || [dock_tile contentView] == NULL) {
     NSImageView* content_view = [[NSImageView alloc] init];
     [content_view setImage:[NSApp applicationIconImage]];
     [dock_tile setContentView:content_view];
@@ -34,7 +33,7 @@
   [bezier_path setLineWidth:2.0];
   [[NSColor grayColor] set];
   [bezier_path stroke];
-  
+
   // Fill the rounded rect.
   rect = NSInsetRect(rect, 2.0, 2.0);
   radius = rect.size.height / 2;
@@ -62,6 +61,10 @@
 
 - (void)setProgress:(float)progress {
   [self setDoubleValue:progress];
+}
+
+- (void)clear {
+  [[NSApp dockTile] setContentView:NULL];
 }
 
 @end
