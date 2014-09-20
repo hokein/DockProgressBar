@@ -5,10 +5,7 @@
 + (DockDownloadProgressBar*)sharedDockDownloadProgressBar {
   static DockDownloadProgressBar* progress_bar;
   NSDockTile* dock_tile = [NSApp dockTile];
-  if (!progress_bar || [dock_tile contentView] == NULL) {
-    NSImageView* content_view = [[NSImageView alloc] init];
-    [content_view setImage:[NSApp applicationIconImage]];
-    [dock_tile setContentView:content_view];
+  if (!progress_bar) {
     progress_bar = [[DockDownloadProgressBar alloc] initWithFrame:
                      NSMakeRect(0.0f, 0.0f, dock_tile.size.width, 15.0f)];
     [progress_bar setStyle:NSProgressIndicatorBarStyle];
@@ -17,7 +14,11 @@
     [progress_bar setMinValue:0];
     [progress_bar setMaxValue:1];
     [progress_bar setHidden:NO];
-                                 
+  }
+  if ([dock_tile contentView] == NULL) {
+    NSImageView* content_view = [[NSImageView alloc] init];
+    [content_view setImage:[NSApp applicationIconImage]];
+    [dock_tile setContentView:content_view];
     [content_view addSubview:progress_bar];
   }
   return progress_bar;

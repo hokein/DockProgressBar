@@ -205,12 +205,11 @@ class ScopedNSGraphicsContextSaveGState {
 + (DockCircularProgressBar*) sharedDockCircularProgressBar {
   static DockCircularProgressBar* progress_bar;
   NSDockTile* dockTile = [NSApp dockTile];
-  if (!progress_bar || [dockTile contentView] == NULL) {
-    DockTileView* dockTileView = [[DockTileView alloc] init];
-    [dockTile setContentView:dockTileView];
-    
+  if (!progress_bar) {
     progress_bar = [[DockCircularProgressBar alloc] init];
-
+  }
+  if ([dockTile contentView] == NULL) {
+    DockTileView* dockTileView = [[DockTileView alloc] init];
     [dockTile setContentView:dockTileView];
   }
   return progress_bar;
