@@ -1,9 +1,9 @@
-#DockProgressBar
+# DockProgressBar
 
 DockProgressBar provides different style progress bar on Mac OS X.
 With it, developers can show dock progress bar in their application without much efforts.
 
-##DockProgressBar Styles
+## DockProgressBar Styles
 
 DockProgressBar is designed as singleton, and provides simple APIs for developers: 
 
@@ -29,7 +29,7 @@ DockCircularProgressBar* progress_bar =
 [progress_bar updateProgressBar];
 ```
 
-###DockDownloadProgressBar
+### DockDownloadProgressBar
 
 The same style likes the original download bar on Mac OS X.
 
@@ -38,7 +38,7 @@ you can use any base class's method to custom your progress bar.
 
 ![]( https://github.com/hokein/DockProgressBar/blob/master/images/download_progress_bar.png)
 
-###DockCircularProgressBar
+### DockCircularProgressBar
 
 The circular style progress bar like Google Chrome download style.
 
@@ -52,6 +52,6 @@ CicularProgressBar with percent:
 
 ![]( https://github.com/hokein/DockProgressBar/blob/master/images/circular_progress_bar_with_percent.png)
 
-##License
+## License
 
 BSD
